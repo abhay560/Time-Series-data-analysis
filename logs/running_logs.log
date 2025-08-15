@@ -1,1 +1,192 @@
 [2025-08-14 18:47:51,467: INFO: main: Welcome to our custom logging]
+[2025-08-14 20:24:10,973: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-14 20:24:10,977: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-08-14 20:25:10,719: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-14 20:25:10,730: INFO: common: created directory at : artifacts]
+[2025-08-14 20:25:10,734: INFO: common: created directory at : artifacts/data]
+[2025-08-14 20:25:42,502: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-14 20:25:42,509: INFO: common: created directory at : artifacts]
+[2025-08-14 20:25:42,511: INFO: common: created directory at : artifacts/data]
+[2025-08-14 20:25:44,344: INFO: 2352400886: artifacts/data/data.zip download! with following info: 
+Content-Type: text/html; charset=utf-8
+Date: Thu, 14 Aug 2025 18:25:43 GMT
+Cache-Control: no-cache, no-store
+Pragma: no-cache
+Set-Cookie: ka_sessionid=840a6af4e5836a49f521951b80fea47f; max-age=2626560; path=/
+Set-Cookie: CSRF-TOKEN=CfDJ8H3GHv39YMxDjEpKbXZX9wEKocQw9ZXu3K0x7et9H-IPixROIYtOplRQ_xOonyfiMalmC4dNYhenUYFtMP_SBJQXWvYgAq5LfgI-gVAbpQ; path=/; secure; samesite=strict; httponly
+Set-Cookie: XSRF-TOKEN=CfDJ8H3GHv39YMxDjEpKbXZX9wHMaUV_10n6qJyiFyf-XwGs_bs8wsFg5Heka_hOuzI1AqEyaXF2E3WsxYlBb6NEWSt2RI3pwpXuvX-9tm8jHv5anw; path=/; secure; samesite=strict
+Set-Cookie: CLIENT-TOKEN=eyJhbGciOiJub25lIiwidHlwIjoiSldUIn0.eyJpc3MiOiJrYWdnbGUiLCJhdWQiOiJjbGllbnQiLCJzdWIiOiIiLCJuYnQiOiIyMDI1LTA4LTE0VDE4OjI1OjQ0LjE0MzMyOTZaIiwiaWF0IjoiMjAyNS0wOC0xNFQxODoyNTo0NC4xNDMzMjk2WiIsImp0aSI6ImY5OTE5MTY5LTcyNjMtNDQxYS1iYzkzLTI2MjI3ZDBjNTQwMCIsImV4cCI6IjIwMjUtMDktMTRUMTg6MjU6NDQuMTQzMzI5NloiLCJhbm9uIjp0cnVlLCJmZiI6WyJCZW5jaG1hcmtVbmlmaWVkTGVhZGVyYm9hcmREYXRhR3JpZCIsIktlcm5lbHNPcGVuSW5Db2xhYkxvY2FsVXJsIiwiTWV0YXN0b3JlQ2hlY2tBZ2dyZWdhdGVGaWxlSGFzaGVzIiwiVXNlckxpY2Vuc2VBZ3JlZW1lbnRTdGFsZW5lc3NUcmFja2luZyIsIktlcm5lbHNTZXR0aW5nc1RhYiIsIlN0c0Rvd25sb2FkIiwiS2VybmVsc1BheVRvU2NhbGUiLCJOZXdBbmRFeGNpdGluZ0NvbnRlbnRMb2hwIiwiVW5pZmllZFZvdGVzUmVhZCIsIkdhbWVBcmVuYSIsIlJlZGlyZWN0S2FnZ2xlT3JnQmVuY2htYXJrcyIsIkNvbW11bml0eVdyaXRlVXBzIiwiRmVhdHVyZWRNb2RlbHNTaGVsZiIsIkRhdGFzZXRQb2xhcnNEYXRhTG9hZGVyIiwiS2VybmVsc0ZpcmViYXNlTG9uZ1BvbGxpbmciLCJGcm9udGVuZEVycm9yUmVwb3J0aW5nIiwiQWxsb3dGb3J1bUF0dGFjaG1lbnRzIiwiVGVybXNPZlNlcnZpY2VCYW5uZXIiLCJEYXRhc2V0VXBsb2FkZXJEdXBsaWNhdGVEZXRlY3Rpb24iXSwiZmZkIjp7Ik1vZGVsSWRzQWxsb3dJbmZlcmVuY2UiOiIiLCJNb2RlbEluZmVyZW5jZVBhcmFtZXRlcnMiOiJ7IFwibWF4X3Rva2Vuc1wiOiAxMjgsIFwidGVtcGVyYXR1cmVcIjogMC40LCBcInRvcF9rXCI6IDUgfSIsIlNwb3RsaWdodENvbW11bml0eUNvbXBldGl0aW9uIjoiMTAxMDM5LDEwNTg3NCw5OTY1MCw5MTE5Niw5MTQ1MSw5MTQ0OCw4OTg1MCw4ODYxMiw5NDY4OSw5NzU2OSw5ODQ1MCw5NDE0Nyw5NDE0Nyw5NjE2NCwxMDUzOTkiLCJQZXJzb25hbEJlbmNobWFya3NQcmlvcml0eVRhc2tJZHMiOiIxMDYsMjI5LDEwNSwyMjcsMTEwLDIyOCwxMTYsMjMwLDE3MywyMzIsMTc1LDIzOSwyNjQsMjQ5LDI0NyIsIlN0c01pbkZpbGVzIjoiNzUwMDAiLCJGZWF0dXJlZEJlbmNobWFya3MiOiIxLDE2LDUxLDEzNCIsIlN0c01pbkdiIjoiMSIsIkdldHRpbmdTdGFydGVkQ29tcGV0aXRpb25zIjoiMzEzNiw1NDA3LDg2NTE4LDM0Mzc3IiwiQ2xpZW50UnBjUmF0ZUxpbWl0UXBzIjoiNDAiLCJDbGllbnRScGNSYXRlTGltaXRRcG0iOiI1MDAiLCJBZGRGZWF0dXJlRmxhZ3NUb1BhZ2VMb2FkVGFnIjoiZGlzYWJsZWQiLCJLZXJuZWxFZGl0b3JBdXRvc2F2ZVRocm90dGxlTXMiOiIzMDAwMCIsIktlcm5lbHNMNEdwdUNvbXBzIjoiODYwMjMsODQ3OTUsODg5MjUsOTE0OTYiLCJGZWF0dXJlZENvbW11bml0eUNvbXBldGl0aW9ucyI6IjYwMDk1LDU0MDAwLDU3MTYzLDgwODc0LDgxNzg2LDgxNzA0LDgyNjExLDg1MjEwIiwiR2FtZUFyZW5hRmVhdHVyZWRTdHJlYW0iOiIiLCJFbWVyZ2VuY3lBbGVydEJhbm5lciI6IiIsIkNvbXBldGl0aW9uTWV0cmljVGltZW91dE1pbnV0ZXMiOiIzMCIsIktlcm5lbHNQYXlUb1NjYWxlUHJvUGx1c0dwdUhvdXJzIjoiMzAiLCJLZXJuZWxzUGF5VG9TY2FsZVByb0dwdUhvdXJzIjoiMTUiLCJHYW1lQXJlbmFTdHJlYW1MaW5rcyI6IiIsIkRhdGFzZXRzU2VuZFBlbmRpbmdTdWdnZXN0aW9uc1JlbWluZGVyc0JhdGNoU2l6ZSI6IjEwMCIsIkdhbWVBcmVuYUJlbmNobWFya1ZlcnNpb25zIjoiMTI5In0sInBpZCI6ImthZ2dsZS0xNjE2MDciLCJzdmMiOiJ3ZWItZmUiLCJzZGFrIjoiQUl6YVN5QTRlTnFVZFJSc2tKc0NaV1Z6LXFMNjU1WGE1SkVNcmVFIiwiYmxkIjoiZjVjYThmMDQ0OWM3Mjg3ZGJlOGU3ZjAzNjFlYmVhMWY3OTllZjk2NiJ9.; path=/; secure; samesite=lax
+Set-Cookie: GCLB=CIvYh7eA2s2r3AEQAw; path=/; HttpOnly
+Vary: Accept-Encoding
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+Content-Security-Policy: object-src 'none'; script-src 'nonce-KdvtKph+wt8JFFxfUVX6Hw==' 'report-sample' 'unsafe-inline' 'unsafe-eval' 'strict-dynamic' https: http:; base-uri 'none'; report-uri https://csp.withgoogle.com/csp/kaggle/20201130; frame-src 'self' https://www.kaggleusercontent.com https://www.youtube.com/embed/ https://youtu.be https://polygraph-cool.github.io https://www.google.com/recaptcha/ https://www.docdroid.com https://www.docdroid.net https://kaggle-static.storage.googleapis.com https://kkb-production.jupyter-proxy.kaggle.net https://kkb-production.firebaseapp.com https://kaggle-metastore.firebaseapp.com https://apis.google.com https://content-sheets.googleapis.com/ https://accounts.google.com/ https://storage.googleapis.com https://docs.google.com https://drive.google.com https://calendar.google.com/ https://google.qualtrics.com/ https://player.kick.com/ https://player.twitch.tv/ https://kaggle.com localhost;
+X-Content-Type-Options: nosniff
+Referrer-Policy: strict-origin-when-cross-origin
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Connection: close
+Transfer-Encoding: chunked
+
+]
+[2025-08-14 20:27:50,365: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-14 20:27:50,381: INFO: common: created directory at : artifacts]
+[2025-08-14 20:27:50,385: INFO: common: created directory at : artifacts/data]
+[2025-08-14 20:27:50,388: INFO: 1585119331: file already exist]
+[2025-08-14 20:27:50,397: INFO: 1585119331: File is not a zip file]
+[2025-08-14 20:47:11,106: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-14 20:47:11,123: INFO: common: created directory at : artifacts]
+[2025-08-14 20:47:11,125: INFO: common: created directory at : artifacts/data]
+[2025-08-14 20:47:12,380: INFO: 1585119331: artifacts/data/data.zip download! with following info: 
+Connection: close
+Content-Length: 785065
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: text/plain; charset=utf-8
+ETag: "7a0e554c0969911ac10ba92b3af7c3605c3910abeef8732499d0ffcc9945a62f"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: A62F:22114D:F68A5:1186B7:689E2F2F
+Accept-Ranges: bytes
+Date: Thu, 14 Aug 2025 18:47:12 GMT
+Via: 1.1 varnish
+X-Served-By: cache-fra-etou8220069-FRA
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1755197232.030335,VS0,VE137
+Vary: Authorization,Accept-Encoding
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 1d6e6da985f8465d37f8d2aa0a21cfc8d5128b09
+Expires: Thu, 14 Aug 2025 18:52:12 GMT
+Source-Age: 0
+
+]
+[2025-08-14 20:47:12,416: INFO: 1585119331: File is not a zip file]
+[2025-08-14 20:51:00,089: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-14 20:51:00,100: INFO: common: created directory at : artifacts]
+[2025-08-14 20:51:00,103: INFO: common: created directory at : artifacts/data_ingestion]
+[2025-08-14 20:51:01,249: INFO: 1585119331: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 785065
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: text/plain; charset=utf-8
+ETag: "7a0e554c0969911ac10ba92b3af7c3605c3910abeef8732499d0ffcc9945a62f"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: A62F:22114D:F68A5:1186B7:689E2F2F
+Accept-Ranges: bytes
+Date: Thu, 14 Aug 2025 18:51:01 GMT
+Via: 1.1 varnish
+X-Served-By: cache-fra-etou8220042-FRA
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1755197461.061374,VS0,VE2
+Vary: Authorization,Accept-Encoding
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: caddfe01bd0243616b53b0c8a4b8855c37eb05eb
+Expires: Thu, 14 Aug 2025 18:56:01 GMT
+Source-Age: 229
+
+]
+[2025-08-14 20:51:01,275: INFO: 1585119331: File is not a zip file]
+[2025-08-14 21:00:15,778: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-14 21:00:15,794: INFO: common: created directory at : artifacts]
+[2025-08-14 21:00:15,797: INFO: common: created directory at : artifacts/data_ingestion]
+[2025-08-14 21:00:16,956: INFO: 1585119331: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 785065
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: text/plain; charset=utf-8
+ETag: "7a0e554c0969911ac10ba92b3af7c3605c3910abeef8732499d0ffcc9945a62f"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 2517:205A0C:115ADD:13CAE3:689E323E
+Accept-Ranges: bytes
+Date: Thu, 14 Aug 2025 19:00:16 GMT
+Via: 1.1 varnish
+X-Served-By: cache-fra-etou8220110-FRA
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1755198017.652647,VS0,VE129
+Vary: Authorization,Accept-Encoding
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 4716488c14c50042e03d4e1a58d8b8e0f1b4d6b4
+Expires: Thu, 14 Aug 2025 19:05:16 GMT
+Source-Age: 0
+
+]
+[2025-08-14 21:00:16,991: INFO: 1585119331: File is not a zip file]
+[2025-08-14 21:00:51,946: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-14 21:00:51,949: INFO: common: created directory at : artifacts]
+[2025-08-14 21:00:51,952: INFO: common: created directory at : artifacts/data_ingestion]
+[2025-08-14 21:00:51,954: INFO: 1585119331: file already exist]
+[2025-08-14 21:04:28,092: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-14 21:04:28,105: INFO: common: created directory at : artifacts]
+[2025-08-14 21:04:28,107: INFO: common: created directory at : artifacts/data_ingestion]
+[2025-08-14 21:04:28,110: INFO: 1585119331: file already exist]
+[2025-08-14 21:47:45,846: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-14 21:47:45,856: INFO: common: created directory at : artifacts]
+[2025-08-14 21:47:45,857: INFO: common: created directory at : artifacts/data_ingestion]
+[2025-08-14 21:47:45,859: INFO: 1585119331: file already exist]
+[2025-08-15 14:12:26,818: INFO: main: >>>>>stage Data Ingestion Stage started <<<<]
+[2025-08-15 14:12:26,849: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-15 14:12:26,850: INFO: common: created directory at : artifacts]
+[2025-08-15 14:12:26,851: INFO: common: created directory at : artifacts/data_ingestion]
+[2025-08-15 14:12:26,851: INFO: data_ingestion: file already exist]
+[2025-08-15 14:12:26,892: INFO: main: >>>>>> stage Data Ingestion Stage completed <<<<<]
+[2025-08-15 14:12:57,056: INFO: main: >>>>>stage Data Ingestion Stage started <<<<]
+[2025-08-15 14:12:57,058: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-15 14:12:57,059: INFO: common: created directory at : artifacts]
+[2025-08-15 14:12:57,060: INFO: common: created directory at : artifacts/data_ingestion]
+[2025-08-15 14:12:57,060: INFO: data_ingestion: file already exist]
+[2025-08-15 14:12:57,067: INFO: main: >>>>>> stage Data Ingestion Stage completed <<<<<]
+[2025-08-15 14:14:16,717: INFO: main: >>>>>stage Data Ingestion Stage started <<<<]
+[2025-08-15 14:14:16,718: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-15 14:14:16,720: INFO: common: created directory at : artifacts]
+[2025-08-15 14:14:16,720: INFO: common: created directory at : artifacts/data_ingestion]
+[2025-08-15 14:14:17,529: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 785065
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: text/plain; charset=utf-8
+ETag: "7a0e554c0969911ac10ba92b3af7c3605c3910abeef8732499d0ffcc9945a62f"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: E718:29B45D:6F4076:829493:689F2493
+Accept-Ranges: bytes
+Date: Fri, 15 Aug 2025 12:14:17 GMT
+Via: 1.1 varnish
+X-Served-By: cache-fra-etou8220097-FRA
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1755260057.029194,VS0,VE176
+Vary: Authorization,Accept-Encoding
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: ed5c069a5b5759ba15b6803b7af89b31dd35e3e7
+Expires: Fri, 15 Aug 2025 12:19:17 GMT
+Source-Age: 0
+
+]
+[2025-08-15 14:14:17,545: INFO: data_ingestion: File is not a zip file]
+[2025-08-15 14:14:17,545: INFO: main: >>>>>> stage Data Ingestion Stage completed <<<<<]
+[2025-08-15 14:23:23,061: INFO: main: >>>>>stage Data Ingestion Stage started <<<<]
+[2025-08-15 14:23:23,062: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-15 14:23:23,063: INFO: common: created directory at : artifacts]
+[2025-08-15 14:23:23,063: INFO: common: created directory at : artifacts/data_ingestion]
+[2025-08-15 14:23:23,063: INFO: data_ingestion: file already exist]
+[2025-08-15 14:23:23,071: INFO: main: >>>>>> stage Data Ingestion Stage completed <<<<<]

@@ -1,7 +1,8 @@
 import json
 
 from box import ConfigBox
-from dataEngineer import logger   
+import yaml
+from src.dataEngineer import logger   
 from ensure import ensure_annotations
 import os
 from pathlib import Path
@@ -29,3 +30,16 @@ def load_json(path: Path) -> ConfigBox:
         content = json.load(f)
     logger.info(f"Json file loaded succesfully from: {path}")
     return ConfigBox(content)
+
+
+@ensure_annotations
+def read_yaml(path_to_yaml: Path) -> ConfigBox:
+
+    try:
+        with open(path_to_yaml) as yaml_file:
+            content = yaml.safe_load(yaml_file)
+            logger.info(f"yaml file: {path_to_yaml} loaded successfully")
+            return ConfigBox(content)
+        
+    except Exception as e:
+        raise e
