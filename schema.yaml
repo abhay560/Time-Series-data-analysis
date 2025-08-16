@@ -1,0 +1,18 @@
+COLUMNS:
+  Date: object 
+  Time: object 
+  CO(GT): float64
+  PT08.S1(CO): float64 
+  NMHC(GT): float64 
+  C6H6(GT): float64
+  PT08.S2(NMHC): float64
+  NOx(GT): float64
+  PT08.S3(NOx): float64
+  NO2(GT): float64
+  PT08.S4(NO2): float64
+  PT08.S5(O3): float64
+  T: float64
+  RH: float64
+  AH: float64
+  
+  

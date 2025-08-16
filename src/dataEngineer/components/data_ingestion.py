@@ -29,5 +29,6 @@ class DataIngestion:
         try:
             with zipfile.ZipFile(self.config.local_data_file, 'r') as zip_ref:
                 zip_ref.extractall(unzip_path)
+                logger.info("File unzipped successfully")
         except Exception as e:
             logger.info("File is not a zip file")
