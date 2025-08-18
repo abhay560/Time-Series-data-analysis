@@ -93,4 +93,4 @@ Initialize the database schema
 ```python -m src.db.init_db```
 
 Run
-```python app.py```
+```python main.py```
