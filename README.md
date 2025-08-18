@@ -1,6 +1,6 @@
 ## Data-Engineering-Internship-Bosch
 
-# This project implements an end-to-end data engineering pipeline for handling Air Quality data. The pipeline covers ingestion, validation, transformation, and loading into PostgreSQL. The project follows a modular, production-style architecture.
+This project implements an end-to-end data engineering pipeline for handling Air Quality data. The pipeline covers ingestion, validation, transformation, and loading into PostgreSQL. The project follows a modular, production-style architecture.
 
 ```
 Data-Engineering-Internship-Bosch/
@@ -53,23 +53,23 @@ Data-Engineering-Internship-Bosch/
 └── README.md                        # Project documentation
 
 ```
-# Data Ingestion (dataEngineer/components/data_ingestion.py)
-
+# Data Ingestion
+Download dataset and unzip the file(if it is zipped)
 Monitors incoming CSV files.
 Copies files into artifacts/data_ingestion/.
 
-# Data Validation (dataEngineer/components/data_validation.py)
+# Data Validation 
 
-Ensures expected schema & column names.
+Ensures expected schema, column names and datatypes.
 Moves invalid files into artifacts/quarantine/.
 Keeps validated data in artifacts/valid_data/.
 
-# Data Transformation (dataEngineer/components/data_transformation.py)
+# Data Transformation 
 
 Calculate aggregated metrics such as the minimum, maximum, average, and standard deviation.
 Stores final processed CSVs in aggregated_metrics.csv.
 
-# Database Loading (src/db/load_data.py)
+# Database Loading 
 
 Loads transformed CSV into PostgreSQL using SQLAlchemy.
 Schema: air_quality_uci.airquality_uci_raw and air_quality_uci.aggregated_metrics
