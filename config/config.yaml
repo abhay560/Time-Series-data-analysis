@@ -12,3 +12,7 @@ data_validation:
   STATUS_FILE: artifacts/data_validation/status.txt
   failed_data_dir: artifacts/quarantine
   valid_data_dir: artifacts/valid_data
+
+data_transformation:
+  root_dir: artifacts/data_transformation
+  data_path: artifacts/valid_data/valid_data.csv

@@ -17,3 +17,8 @@ class DataValidationConfig:
     all_schema: dict
     failed_data_dir: Path
     valid_data_dir: Path
+
+@dataclass(frozen = True)
+class DataTransformationConfig:
+    root_dir: Path
+    data_path: Path
