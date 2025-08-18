@@ -1,2 +1,94 @@
-# Data-Engineering-Internship-Bosch
+## Data-Engineering-Internship-Bosch
 
+# This project implements an end-to-end data engineering pipeline for handling Air Quality data. The pipeline covers ingestion, validation, transformation, and loading into PostgreSQL. The project follows a modular, production-style architecture.
+
+Data-Engineering-Internship-Bosch/
+│
+├── artifacts/                       # Stores raw, valid, transformed & quarantined data
+│   ├── data_ingestion/
+│   ├── data_validation/
+│   ├── data_transformation/
+│   ├── quarantine/
+│   └── valid_data/
+│
+├── config/                          # Configuration files
+│   └── config.yaml
+│
+├── logs/                            # Logging outputs
+├── notebook/                        # Jupyter notebooks for exploration
+├── sql/                             # SQL schema definitions
+│   └── schema.sql
+│
+├── src/
+│   ├── dataEngineer/                # Core pipeline package
+│   │   ├── components/              # Modular pipeline components
+│   │   │   ├── data_ingestion.py
+│   │   │   ├── data_transformation.py
+│   │   │   └── data_validation.py
+│   │   │
+│   │   ├── config/                  # Centralized configuration handler
+│   │   │   └── Configuration.py
+│   │   │
+│   │   ├── entity/                  # Entities for structured configs
+│   │   │   └── config_entity.py
+│   │   │
+│   │   ├── pipeline/                # High-level pipeline runners
+│   │   │   ├── data_ingestion_pipeline.py
+│   │   │   ├── data_transformation_pipeline.py
+│   │   │   └── data_validation_pipeline.py
+│   │   │
+│   │   └── utils/                   # Reusable utilities
+│   │       └── common.py
+│   │
+│   └── db/                          # Database layer
+│       ├── engine.py                # PostgreSQL connection engine
+│       ├── init_db.py               # Apply schema to DB
+│       ├── load_data.py             # Load raw and aggregated data into DB
+│       
+│
+├── app.py / main.py                 # Main pipeline orchestrator
+├── requirements.txt                 # Python dependencies
+├── params.yaml                      # Pipeline parameters
+└── README.md                        # Project documentation
+
+## Data Ingestion (dataEngineer/components/data_ingestion.py)
+
+Monitors incoming CSV files.
+Copies files into artifacts/data_ingestion/.
+
+## Data Validation (dataEngineer/components/data_validation.py)
+
+Ensures expected schema & column names.
+Moves invalid files into artifacts/quarantine/.
+Keeps validated data in artifacts/valid_data/.
+
+## Data Transformation (dataEngineer/components/data_transformation.py)
+
+Calculate aggregated metrics such as the minimum, maximum, average, and standard deviation.
+Stores final processed CSVs in aggregated_metrics.csv.
+
+## Database Loading (src/db/load_data.py)
+
+Loads transformed CSV into PostgreSQL using SQLAlchemy.
+Schema: air_quality_uci.airquality_uci_raw and air_quality_uci.aggregated_metrics
+
+## How to Run
+
+# Steps
+
+Clone the Repository
+```https://github.com/abhay560/Data-Engineering-Internship-Bosch```
+
+Create a conda environment after opening the repository
+```conda create -n env python=3.8 -y```
+
+```conda activate env```
+
+Install the requirements
+```pip install -r requirements.txt```
+
+Initialize the database schema
+```python -m src.db.init_db```
+
+Run
+```python app.py```
