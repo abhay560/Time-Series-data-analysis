@@ -8,7 +8,7 @@ Data-Engineering-Internship-Bosch/
 ├── artifacts/                       # Stores raw, valid, transformed & quarantined data
 │   ├── data_ingestion/
 │   ├── data_validation/
-│   ├── data_transformation/
+│   ├── metrics_dir/
 │   ├── quarantine/
 │   └── valid_data/
 │
@@ -48,32 +48,14 @@ Data-Engineering-Internship-Bosch/
 │       ├── load_data.py             # Load raw and aggregated data into DB
 │       
 │
-├── app.py / main.py                 # Main pipeline orchestrator
+├── main.py                          # Main pipeline orchestrator
 ├── requirements.txt                 # Python dependencies
 ├── params.yaml                      # Pipeline parameters
+|__ schema.yaml                      # List of columns present for validation purpose
+|__ template.py                      # Making creation of Folders automatically only by running the script
 └── README.md                        # Project documentation
 
 ```
-# Data Ingestion
-Download dataset and unzip the file(if it is zipped)
-Monitors incoming CSV files.
-Copies files into artifacts/data_ingestion/.
-
-# Data Validation 
-
-Ensures expected schema, column names and datatypes.
-Moves invalid files into artifacts/quarantine/.
-Keeps validated data in artifacts/valid_data/.
-
-# Data Transformation 
-
-Calculate aggregated metrics such as the minimum, maximum, average, and standard deviation.
-Stores final processed CSVs in aggregated_metrics.csv.
-
-# Database Loading 
-
-Loads transformed CSV into PostgreSQL using SQLAlchemy.
-Schema: air_quality_uci.airquality_uci_raw and air_quality_uci.aggregated_metrics
 
 ## How to Run
 
