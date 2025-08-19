@@ -37,6 +37,7 @@ Data-Engineering-Internship-Bosch/
 │   │   │   ├── data_ingestion_pipeline.py
 │   │   │   ├── data_transformation_pipeline.py
 │   │   │   └── data_validation_pipeline.py
+|   |   |   |__ data_loading_pipeline.py
 │   │   │
 │   │   └── utils/                   # Reusable utilities
 │   │       └── common.py
