@@ -1,32 +1,31 @@
+-- Table for raw sensor data
 CREATE SCHEMA IF NOT EXISTS air_quality_uci;
-
-DROP TABLE IF EXISTS air_quality_uci.airquality_uci_raw;
 CREATE TABLE air_quality_uci.airquality_uci_raw (
-  "Date"           TEXT,
-  "Time"           TEXT,
-  "CO(GT)"         TEXT,
-  "PT08.S1(CO)"    TEXT,
-  "NMHC(GT)"       TEXT,
-  "C6H6(GT)"       TEXT,
-  "PT08.S2(NMHC)"  TEXT,
-  "NOx(GT)"        TEXT,
-  "PT08.S3(NOx)"   TEXT,
-  "NO2(GT)"        TEXT,
-  "PT08.S4(NO2)"   TEXT,
-  "PT08.S5(O3)"    TEXT,
-  "T"              TEXT,
-  "RH"             TEXT,
-  "AH"             TEXT
+    "Date" TEXT,
+    "Time" TEXT,
+    "CO(GT)" FLOAT,
+    "PT08.S1(CO)" FLOAT,
+    "NMHC(GT)" FLOAT,
+    "C6H6(GT)" FLOAT,
+    "PT08.S2(NMHC)" FLOAT,
+    "NOx(GT)" FLOAT,
+    "PT08.S3(NOx)" FLOAT,
+    "NO2(GT)" FLOAT,
+    "PT08.S4(NO2)" FLOAT,
+    "PT08.S5(O3)" FLOAT,
+    "T" FLOAT,
+    "RH" FLOAT,
+    "AH" FLOAT
 );
 
-DROP TABLE IF EXISTS air_quality_uci.aggregated_metrics;
+-- Table for aggregated metrics
 CREATE TABLE air_quality_uci.aggregated_metrics (
     feature TEXT NOT NULL,
-    min_val TEXT,
-    max_val TEXT,
-    avg_val TEXT,
-    std_val TEXT,
+    min_val FLOAT,
+    max_val FLOAT,
+    avg_val FLOAT,
+    std_val FLOAT,
     source_file TEXT,
     source_system TEXT,
-    record_time TEXT  -- fixed column name
+    record_time TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP
 );

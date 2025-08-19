@@ -7,11 +7,17 @@ data_ingestion:
 
 data_validation:
   root_dir: artifacts/data_validation
-  unzip_data_dir: artifacts/data_ingestion/AirQualityUCI.csv
+  unzip_data_dir: artifacts/data_ingestion
   STATUS_FILE: artifacts/data_validation/status.txt
   failed_data_dir: artifacts/quarantine
   valid_data_dir: artifacts/valid_data
 
 data_transformation:
   root_dir: artifacts/data_transformation
-  data_path: artifacts/valid_data/valid_data.csv
+  data_path: artifacts/valid_data
+  metrics_dir: artifacts/metrics_dir
+
+
+data_loading:
+  root_dir: artifacts/data_ingestion
+  metrics_dir: artifacts/metrics_dir

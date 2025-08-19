@@ -21,3 +21,9 @@ class DataValidationConfig:
 class DataTransformationConfig:
     root_dir: Path
     data_path: Path
+    metrics_dir: Path
+
+@dataclass(frozen=True)
+class DataLoadingConfig:
+    root_dir: Path
+    metrics_dir: Path
