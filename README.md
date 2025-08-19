@@ -61,19 +61,24 @@ Data-Engineering-Internship-Bosch/
 
 # Steps
 
-Clone the Repository
+# Clone the Repository
 ```https://github.com/abhay560/Data-Engineering-Internship-Bosch```
 
-Create a conda environment after opening the repository
+# Create a conda environment after opening the repository
 ```conda create -n env python=3.8 -y```
 
 ```conda activate env```
 
-Install the requirements
+# Install the requirements
 ```pip install -r requirements.txt```
 
-Initialize the database schema
+# Database setup
+```DATABASE_URL = "postgresql+psycopg2://postgres:YOUR_PASSWORD1999@localhost:PORTNO/DATABASE_NAME"```           
+Add it inside ```src/db/engine.py   and  src/db/load_data.py```
+Currently the code for Data Loading to the Database is commented, you can see it in main.py. After adding your DATABASE_URL, uncomment the code and the main.py again.
+
+# Initialize the database schema
 ```python -m src.db.init_db```
 
-Run
+# Run
 ```python main.py```
