@@ -6,11 +6,11 @@ This project implements an end-to-end data engineering pipeline for handling Air
 Data-Engineering-Internship-Bosch/
 │
 ├── artifacts/                       # Stores raw, valid, transformed & quarantined data
-│   ├── data_ingestion/
-│   ├── data_validation/
-│   ├── metrics_dir/
-│   ├── quarantine/
-│   └── valid_data/
+│   ├── data_ingestion/              # Stores raw data
+│   ├── data_validation/             # Stores status of file (if Validated successfully stores "True" else "False")
+│   ├── metrics_dir/                 # stores aggregated metrics files
+│   ├── quarantine/                  # Store failed datasets
+│   └── valid_data/                  # Stores valid datasets
 │
 ├── config/                          # Configuration files
 │   └── config.yaml
