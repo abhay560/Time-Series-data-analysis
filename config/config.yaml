@@ -13,7 +13,6 @@ data_validation:
   valid_data_dir: artifacts/valid_data
 
 data_transformation:
-  root_dir: artifacts/data_transformation
   data_path: artifacts/valid_data
   metrics_dir: artifacts/metrics_dir
 

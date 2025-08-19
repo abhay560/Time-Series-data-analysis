@@ -12,7 +12,6 @@ class DataTransformation:
         self.config = config
 
     def aggregated_metrices(self, file_name):
-        print(self.config.data_path)
         if Path(self.config.data_path).is_file():
             try:
                 data = pd.read_csv(self.config.data_path)

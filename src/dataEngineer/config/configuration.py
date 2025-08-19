@@ -47,12 +47,10 @@ class ConfigurationManager:
     def get_data_transformation_config(self, file_name) -> DataTransformationConfig:
 
         config = self.config.data_transformation
-        create_directories([config.root_dir])
         create_directories([config.metrics_dir])
         self.prefixed_name = f"valid_data_{file_name}"
 
         data_transformation_config = DataTransformationConfig(
-            root_dir = config.root_dir,
             data_path = Path(config.data_path) / self.prefixed_name,
             metrics_dir = config.metrics_dir
 
