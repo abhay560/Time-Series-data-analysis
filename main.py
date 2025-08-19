@@ -1,6 +1,5 @@
 from pathlib import Path
 import time
-from src.dataEngineer.pipeline.data_loading_pipeline import DataLoadingPipeline
 from src.dataEngineer.pipeline.data_transformation_pipeline import DataTransformationPipeline
 from src.dataEngineer.pipeline.data_validation_pipeline import DataValidationPipeline
 from src.dataEngineer.pipeline.data_ingestion_pipeline import DataIngestionPipeline
@@ -70,9 +69,10 @@ while True:
 
             try:
                 logger.info(f"---------- Stage {STAGE_NAME} started ----------")
-                data_loading_pipeline = DataLoadingPipeline()
+                '''data_loading_pipeline = DataLoadingPipeline()
                 data_loading_pipeline.main(file.name)
-                already_checked_files.add(file.name)
+                already_checked_files.add(file.name)'''
+                logger.info("Please make Database connections, if you want to store the data to database")
                 logger.info(f"---------- Stage {STAGE_NAME} completed ----------")
 
             except Exception as e:

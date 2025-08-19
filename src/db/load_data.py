@@ -3,8 +3,7 @@ from sqlalchemy import create_engine
 from src.dataEngineer.entity.config_entity import DataLoadingConfig
 from src.dataEngineer import logger
 # DB CONNECTION
-pwd = "Abhay%40"
-DATABASE_URL = f"postgresql+psycopg2://postgres:{pwd}1999@localhost:5432/air_quality_db"
+DATABASE_URL = "MENTION YOUR BATABSE URL HERE"
 engine = create_engine(DATABASE_URL)
 
 
