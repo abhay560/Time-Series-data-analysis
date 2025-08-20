@@ -75,9 +75,10 @@ Data-Engineering-Internship-Bosch/
 # Database setup
 ```DATABASE_URL = "postgresql+psycopg2://postgres:YOUR_PASSWORD1999@localhost:PORTNO/DATABASE_NAME"```           
 Add it inside ```src/db/engine.py   and  src/db/load_data.py```
-Currently the code for Data Loading to the Database is commented, you can see it in main.py. After adding your DATABASE_URL, uncomment the code and the main.py again.
+Currently the code for Data Loading to the Database is commented, you can see it in main.py. After adding your DATABASE_URL, uncomment the code and run main.py again.
 
 # Initialize the database schema
+If you have added your DATABASE_URL then only run the below command. Otherwise leave this step, directly run ``` python main.py ```
 ```python -m src.db.init_db```
 
 # Run
