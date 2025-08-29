@@ -83,4 +83,5 @@ If you have added your DATABASE_URL then only run the below command. Otherwise l
 
 # Run
 ```python template.py```        # To create the folder structure
+
 ```python main.py```            # To run the whole pipeline
