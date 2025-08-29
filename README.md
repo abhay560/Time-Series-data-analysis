@@ -82,4 +82,5 @@ If you have added your DATABASE_URL then only run the below command. Otherwise l
 ```python -m src.db.init_db```
 
 # Run
-```python main.py```
+```python template.py```        # To create the folder structure
+```python main.py```            # To run the whole pipeline
