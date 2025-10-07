@@ -1,9 +1,9 @@
-## Data-Engineering-Internship-Bosch
+## Time-Series-data-analysis
 
 This project implements an end-to-end data engineering pipeline for handling Air Quality data. The pipeline covers ingestion, validation, transformation, and loading into PostgreSQL. The project follows a modular, production-style architecture.
 
 ```
-Data-Engineering-Internship-Bosch/
+Time-Series-data-analysis/
 │
 ├── artifacts/                       # Stores raw, valid, transformed & quarantined data
 │   ├── data_ingestion/              # Stores raw data
@@ -62,7 +62,7 @@ Data-Engineering-Internship-Bosch/
 # Steps
 
 # Clone the Repository
-```https://github.com/abhay560/Data-Engineering-Internship-Bosch```
+```https://github.com/abhay560/Time-Series-data-analysis```
 
 # Create a conda environment after opening the repository
 ```conda create -n env python=3.8 -y```
